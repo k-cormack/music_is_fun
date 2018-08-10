@@ -19,7 +19,7 @@ for (let i = 0; i < results.length; i++) {
     <p>${artist.artist}</p>
     <p>${artist.collection}</p>
     <p>${artist.price}</p>
-    <audio>
+    <audio controller>
       <source src="${artist.preview}" type="audio/mpeg"/>
     </audio>  
   </div>
