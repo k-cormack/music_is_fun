@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+
+.img-responsive {
+    width: auto;
+    height: 100px
+}
+.audio-controls {
+    width: 100%
+}
+.row {
+    display: flex
+}
