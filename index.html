@@ -13,23 +13,26 @@
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)" id="artistForm">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist, Album, or Song Name" size="25" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
+    <div class="container">
+        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)" id="artistForm">
+            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+            <div class="form-group">
+                <input type="text" class="form-control m-2" name="artist" placeholder="Artist, Album, or Song Name" size="25" />
+                <button type="submit" class="btn btn-primary m-2" id="get-music-button">Get Music</button>
+            </div>
+    </div>
     </form>
     <div class="container">
         <div class="row" id="song-list">
-            
-
-                    <!--SONGS ADDED DYNAMICALLY HERE-->
 
 
-                
-            
+            <!--SONGS ADDED DYNAMICALLY HERE-->
+
+
+
+
         </div>
+
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,11 +43,19 @@
 </html>
 
 
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-3">
-
-
+<!-- <div class="card-deck">
+    <div class="card border-dark mb-3" style="max-width: 20vh;">
+        <img class="card-img-top img-responsive" src="${artist.albumArt}" alt="art">
+        <div class="card-body">
+            <h5 class="card-title">${artist.title}</h5>
+            <p class="card-text">${artist.artist}</p>
+            <p class="card-text">${artist.collection}</p>
+            <p class="card-text">${artist.price}</p>
+        </div>
+        <div class="card-footer">
+            <audio controls class="audio-controls">
+                <source src="${artist.preview}" type="audio/mpeg" />
+            </audio>
         </div>
     </div>
 </div> -->

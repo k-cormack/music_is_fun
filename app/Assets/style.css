@@ -1,17 +1,42 @@
-#container {
+.form-inline {
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: center;
+    /* padding-left: -15px */
+}
+/* .form-inline {
+    margin-top: 20px
+} */
+#song-list {
     display: flex;
-    flex-direction: row;
-    justify-content: center
+    justify-content: space-around
 }
 
-
 .img-responsive {
-    width: auto;
-    height: 100px
+
+    object-fit: cover
+    /* max-width: 40vw;
+    max-height: auto */
+
+    /* width: 100%;
+    height: 15vw;
+    object-fit: cover */
+
+
+    /* try width: 100% with a padding setting?*/
+    /* height: auto */
+}
+
+.card {
+    width: 250px;
+}
+
+.card-title {
+    word-wrap: break-word
+}
+.album-name {
+    font-size: small
 }
 .audio-controls {
     width: 100%
-}
-.row {
-    display: flex
 }
